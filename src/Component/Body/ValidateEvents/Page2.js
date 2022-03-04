@@ -1,13 +1,13 @@
 import React from 'react'
 import {validateData} from "./ValidateData"
-import { CountdownCircleTimer, useCountdown } from 'react-countdown-circle-timer'
+import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import Countdown from 'react-countdown';
 import validateEvent from '../../Image/validateevent.png'
 import {AiOutlineLink} from 'react-icons/ai'
 
 const ValidatePage2 = () => {
     // Renderer callback with condition
-const renderer = ({ hours, minutes, seconds, completed }) => {
+const renderer = ({ hours, minutes, seconds }) => {
    
     return <span>{hours}:{minutes}:{seconds}</span>;
   
@@ -31,12 +31,13 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
             <div className="validate_events_content">
                 <div className="timer">
                     <CountdownCircleTimer
-                        isPlaying={true}
+                        isPlaying
                         duration={248}
-                        colors={['#004777', '#F7B801', '#A30000', '#A30000']}
+                        colors={["#b1350c"]}
                         size={380}
+                        trailColor="#ff42031a"
                     >
-                        {()=><Countdown date={Date.now() + 248000} renderer={renderer} intervalDelay={1000} zeroPadTime ={1} />}
+                        {()=><Countdown date={Date.now() + 248000} renderer={renderer}   />}
                            
                     </CountdownCircleTimer>
                     

@@ -4,6 +4,7 @@ import {BiDonateHeart} from 'react-icons/bi'
 import {RiContactsFill} from 'react-icons/ri'
 const SelfHelp = () => {
     const [pause , setPause] = useState(0)
+
   return (
     <div className="self_help">
        <div className="box">
@@ -20,8 +21,9 @@ const SelfHelp = () => {
                     <CountdownCircleTimer
                         isPlaying
                         duration={pause}
-                        colors={['#004777', '#F7B801', '#A30000', '#A30000']}
+                        colors={["#b1350c"]}
                         size={380}
+                        trailColor="#ff42031a"
                     >
                         {({ remainingTime })=>`${remainingTime} /60 Days`}
                     </CountdownCircleTimer>

@@ -64,7 +64,7 @@
     margin: 10px;
     padding: 10px 20px;
     letter-spacing: 0.08em;
-    height: 300px;
+    height: fit-content;
     border-radius: 40px 40px;
 }
 .chart_details {
@@ -77,7 +77,10 @@
     font-weight: 400;
     color: #fff;
 }
-
+.chart_content img{
+    height : 197px;
+    width : 738px;
+}
 @media (max-width : 1545px) {
     .chart_box_content{
         width: 40%;

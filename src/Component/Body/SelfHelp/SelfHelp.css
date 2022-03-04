@@ -109,7 +109,7 @@
     margin-left: 10px;
 }
 .donation_amount_box button:focus{
-    background : red;
+    background : #b1350c;
 }
 .donation_input input{
     width : 90%;

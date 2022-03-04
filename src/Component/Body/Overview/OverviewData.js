@@ -1,3 +1,8 @@
+import img1 from "../../Image/Vector1.png"
+import img2 from "../../Image/Vector2.png"
+import img3 from "../../Image/Vector3.png"
+import img4 from "../../Image/Vector4.png"
+
 export const priceData = [
     {
         name : "market cap",
@@ -58,109 +63,27 @@ export const priceData = [
 ]
 
 
+
+
 export const chartData =[
     {
         name : "TOTAL VALUE DEPOSITED",
         price: "$600,000,000",
-        pData : [
-            {
-                name : "Python",
-                student : 13,
-                fees : 10
-            },
-            {
-                name : "PHP",
-                student : 16,
-                fees : 12
-            },
-            {
-                name : "JavaScript",
-                student : 13,
-                fees : 2
-            },
-            {
-                name : "Java",
-                student : 10,
-                fees : 5
-            }
-        ]
+       img : img1
     },
     {
         name : "Market Value of Treasury Assets",
         price: "$600,000,000",
-        pData : [
-            {
-                name : "Python",
-                student : 13,
-                fees : 10
-            },
-            {
-                name : "PHP",
-                student : 16,
-                fees : 12
-            },
-            {
-                name : "JavaScript",
-                student : 13,
-                fees : 2
-            },
-            {
-                name : "Java",
-                student : 10,
-                fees : 5
-            }
-        ]
+        img : img2
     },
     {
         name : "SBETS STAKED",
         price: "$600,000,000",
-        pData : [
-            {
-                name : "Python",
-                student : 13,
-                fees : 10
-            },
-            {
-                name : "PHP",
-                student : 16,
-                fees : 12
-            },
-            {
-                name : "JavaScript",
-                student : 13,
-                fees : 2
-            },
-            {
-                name : "Java",
-                student : 10,
-                fees : 5
-            }
-        ]
+        img : img3
     },
     {
         name : "Protocol Owned Liquidity OHM-DAI",
         price: "99.8%",
-        pData : [
-            {
-                name : "Python",
-                student : 13,
-                fees : 10
-            },
-            {
-                name : "PHP",
-                student : 16,
-                fees : 12
-            },
-            {
-                name : "JavaScript",
-                student : 13,
-                fees : 2
-            },
-            {
-                name : "Java",
-                student : 10,
-                fees : 5
-            }
-        ]
+        img : img4
     }
 ]

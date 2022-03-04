@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {validateData} from "./ValidateData"
-import { CountdownCircleTimer, useCountdown } from 'react-countdown-circle-timer'
+import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import Countdown from 'react-countdown';
 import validateEvent from '../../Image/validateevent.png'
 import { NavLink } from 'react-router-dom';
@@ -36,8 +36,9 @@ const renderer = ({ hours, minutes, seconds,}) => {
                 <CountdownCircleTimer
                     isPlaying
                     duration={0}
-                    colors={['#004777', '#F7B801', '#A30000', '#A30000']}
+                    colors={["rgba(255, 64, 3, 0.1)"]}
                     size={380}
+                    trailColor ="#ff42031a"
                 >
                     {()=> <Countdown date={Date.now() + 0 } renderer={renderer} intervalDelay={1000} zeroPadTime ={1} />}
                 </CountdownCircleTimer>
