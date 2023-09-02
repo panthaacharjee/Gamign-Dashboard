@@ -26,9 +26,6 @@ const Overview = () => {
                         <p>{val.name}</p>
                         <p className="chart_price">{val.price}</p>
                     </div>
-                    <div className="chart_content">
-                         <img src={val.img} alt="" />
-                    </div>
                 </div>
               )
           })}
